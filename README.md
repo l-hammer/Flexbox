@@ -1,6 +1,6 @@
 本文档Fork自[xluos/flexbox](https://github.com/xluos/demo/tree/gh-pages/flexbox)
 
-# Flexbox演示站 [地址](https://l-hammer.github.io/demo/flexbox/)
+# Flexbox演示站 [地址](https://l-hammer.github.io/Flexbox/)
 
 可以通过动态的点击flexbox属性可以实时看到各个属性的效果，有助于理解各个属性。
 
