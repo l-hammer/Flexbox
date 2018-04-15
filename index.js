@@ -6,7 +6,7 @@
 console.log('%c既然按了F12，为何不去GitHub顺便给个start', 'color: #fff; background: #f40; font-size: 24px;');
 console.log('%chttps://github.com/xluos/demo/tree/gh-pages/flexbox','font-size: 16px;');
 
-const item_body = document.getElementById('item-body');
+var item_body = document.getElementById('item-body');
 //设置容器属性的点击事件
 document.getElementById('options').addEventListener('click', function(e){
     var event = e || window.event;
@@ -23,7 +23,7 @@ document.getElementById('options').addEventListener('click', function(e){
 })
 //添加和减少项目的点击事件
 var count = 5;
-const countNode = document.getElementById('count');
+var countNode = document.getElementById('count');
 
 var item_template = `<div class="number">${count}</div><input title=“定义项目的排列顺序。数值越小，排列越靠前，默认为0” placeholder="order" type="text"><input title=“属性定义项目的放大比例，默认为0” placeholder="flex-grow" type="text"><input title=“属性定义了项目的缩小比例，默认为1” placeholder="flex-shrink" type="text"><input title=“属性定义了在分配多余空间之前，项目占据的主轴空间。” placeholder="flex-basis" type="text"><select name="align-self" title="align-self 允许不一样的对齐方式，可覆盖\`align-items\`属性" ><option value="flex-start">flex-start</option><option value="flex-end">flex-end</option><option value="center">center</option><option value="space-between">space-around</option><option value="stretch">stretch</option><option selected="selected" value="auto">auto</option></select>`
 function addItem(){
@@ -53,8 +53,8 @@ function subItem(){
 }
 //拖动更改项目宽度的事件
 var rval = 85;
-const widthRange = document.getElementById('widthRange');
-const itemWidth = document.getElementById('itemWidth');
+var widthRange = document.getElementById('widthRange');
+var itemWidth = document.getElementById('itemWidth');
 widthRange.addEventListener('input', setWidth);
 // widthRange.addEventListener('click', setWidth);
 function setWidth() {

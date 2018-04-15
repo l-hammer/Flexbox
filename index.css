@@ -76,14 +76,13 @@ body {
     width: 100%;
     min-width: 320px;
     color: #2C3E50;
-    background: #ECF0F1;
+    background: rgba(180,160,120,.1);
 }
 h1 {
     text-align: center;
 }
 .box {
     margin: 10px;
-    border: #aaa solid 1px;
     border-radius: 10px;
     padding: 10px;
     display: flex;
